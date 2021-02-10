@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      <Header title="Home"/>
       {
         loading ? <p>Loading!</p>
           : <List characters={characters}/>

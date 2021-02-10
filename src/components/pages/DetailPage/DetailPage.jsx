@@ -11,7 +11,7 @@ export default function DetailPage({ match }) {
 
   return (
     <>
-      <Header />
+      <Header title="Details"/>
       {
         loading ? <p>Loading!</p>
           : <Details {...character}/>

@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function CharPreview({ name, image }) {
+export default function CharPreview({ id, name, image }) {
   return (
     <>
-      <h1>{name}</h1>
+      <a href={`/${id}`}>{name}</a>
       <img src={image}/>
     </>
   );
 }
 
 CharPreview.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired
 };

@@ -21,7 +21,7 @@ const App = () => {
             <Route
               path = "/:id"
               exact
-              render = {routerProps => <Details {...routerProps}/>}
+              render = {routerProps => <DetailPage {...routerProps}/>}
             />
           </Switch>
         </Router>

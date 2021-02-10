@@ -6,22 +6,29 @@ const useCharacters = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getCharacters().then(chars => {
-      setCharacters(chars);
-      setLoading(false);
-    });
+    getCharacters()
+      .then(chars => {
+        setCharacters(chars);
+        setLoading(false);
+      });
   }, []);
 
   return { characters, loading };
 };
 
-const useCharacter = () => {
+const useCharacter = id => {
   const [character, setCharacter] = useState([]);
   const [loading, setLoading] = useState([]);
 
   useEffect(() => {
-
-  });
+    getCharacter(id)
+      .then(char => {
+        setCharacter(char);
+        setLoading(false);
+      });
+  }, [id]);
 
   return { character, loading };
 };
+
+export { useCharacters, useCharacter };

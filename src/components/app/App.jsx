@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import Home from '../pages/Home/Home';
-import Details from '../';
+import DetailPage from '../pages/DetailPage/DetailPage';
 
 const App = () => {
   return (

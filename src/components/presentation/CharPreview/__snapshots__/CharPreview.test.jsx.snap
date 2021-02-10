@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharPreview component renders CharPreview 1`] = `
+<DocumentFragment>
+  <a
+    href="/1"
+  >
+    Rick Sanchez
+  </a>
+  <img
+    src="rick-sanchez.com"
+  />
+</DocumentFragment>
+`;

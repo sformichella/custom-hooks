@@ -23,7 +23,7 @@ export default function DetailPage({ match }) {
 DetailPage.propTypes = {
   match: PropTypes.objectOf(PropTypes.shape({
     params: PropTypes.objectOf(PropTypes.shape({
-      id: PropTypes.string.isRequired
+      id: PropTypes.number.isRequired
     }))
   }))
 };

@@ -4,12 +4,16 @@ import CharPreview from '../CharPreview/CharPreview';
 
 export default function List({ characters }) {
   return (
-    characters.map(char => {
-      return <CharPreview 
-        key={char.id}
-        {...char}
-      />;
-    })
+    <ul data-testid="list">
+      {
+        characters.map(char => {
+          return <CharPreview 
+            key={char.id}
+            {...char}
+          />;
+        })
+      }
+    </ul>
   );
 }
 

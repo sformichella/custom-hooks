@@ -5,7 +5,9 @@ import Header from './Header';
 describe('Header component', () => {
   afterEach(() => cleanup());
   it('renders Header', () => {
-    const { asFragment } = render(<Header />);
+    const { asFragment } = render(<Header
+      title="Home"
+    />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import Home from './Home';
 import { ThemeProvider } from '../../../state/themeContext';
 
@@ -24,5 +24,14 @@ describe('Home', () => {
         <Home />
       </ThemeProvider>
     );
+
+    const themeCheckbox = await screen.findByLabelText('Light/Dark Theme:');
+    const themedDiv = await screen.findByTestId('home-container');
+
+    fireEvent.click(themeCheckbox);
+
+    return waitFor(() => {
+      expect(themedDiv).toHaveClass('dark');
+    });
   });
 });

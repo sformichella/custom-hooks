@@ -2,7 +2,7 @@ import React, { createContext, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useToggleTheme } from '../state/theme';
 
-export const ThemeContext = createContext(null);
+export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const { theme, toggleTheme } = useToggleTheme();

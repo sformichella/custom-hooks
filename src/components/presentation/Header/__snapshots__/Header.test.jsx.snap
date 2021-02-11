@@ -11,6 +11,15 @@ exports[`Header component renders Header 1`] = `
     >
       Home
     </a>
+    <label
+      for="theme-checkbox"
+    >
+      Light/Dark Theme: 
+    </label>
+    <input
+      id="theme-checkbox"
+      type="checkbox"
+    />
   </div>
 </DocumentFragment>
 `;

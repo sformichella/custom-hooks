@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../../presentation/Header/Header';
 import Details from '../../presentation/Details/Details';
-import { useCharacter } from '../../../hooks/characters';
+import { useCharacter } from '../../../state/characters';
 
 export default function DetailPage({ match }) {
 

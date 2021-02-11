@@ -10,7 +10,8 @@ export default function Header({ title }) {
     <div>
       <h1>{title}</h1>
       <a href="/">Home</a>
-      <input type="checkbox" onChange={toggleTheme} />
+      <label htmlFor="theme-checkbox">Light/Dark Theme: </label>
+      <input id="theme-checkbox" type="checkbox" onChange={toggleTheme} />
     </div>
   );
 

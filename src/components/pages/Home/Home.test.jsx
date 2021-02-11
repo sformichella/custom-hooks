@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import Home from './Home';
 import { ThemeProvider } from '../../../state/themeContext';
 
@@ -16,5 +16,13 @@ describe('Home', () => {
     return waitFor(() => {
       expect(list).not.toBeEmptyDOMElement();
     });
+  });
+
+  it('changes the theme from light to dark', async() => {
+    render(
+      <ThemeProvider>
+        <Home />
+      </ThemeProvider>
+    );
   });
 });

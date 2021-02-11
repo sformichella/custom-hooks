@@ -11,7 +11,7 @@ export default function Home() {
   const { theme } = useTheme();
 
   return (
-    <div className={`${styles[theme]}`}>
+    <div data-testid="home-container" className={`${styles[theme]}`}>
       <Header title="Home"/>
       {
         loading ? <p>Loading!</p>

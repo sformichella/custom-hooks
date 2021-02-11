@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useTheme = () => {
+const useToggleTheme = () => {
   const [theme, setTheme] = useState(false);
 
   const toggleTheme = () => {
@@ -10,4 +10,4 @@ const useTheme = () => {
   return { theme, toggleTheme };
 };
 
-export { useTheme };
+export { useToggleTheme };

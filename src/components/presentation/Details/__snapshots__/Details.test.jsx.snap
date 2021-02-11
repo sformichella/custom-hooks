@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details component renders Details 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="character"
+  >
+    <h1>
+      Rick Sanchez
+    </h1>
+    <img
+      src="rick-sanchez.com"
+    />
+    <p>
+      alive
+    </p>
+  </div>
+</DocumentFragment>
+`;

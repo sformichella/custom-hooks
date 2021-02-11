@@ -1,5 +1,33 @@
 import React from 'react';
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+import Home from '../pages/Home/Home';
+import DetailPage from '../pages/DetailPage/DetailPage';
 
-export default function App() {
-  return <h1>Hello World</h1>;
-}
+const App = () => {
+  return (
+    <>
+      <main>
+        <Router>
+          <Switch>
+            <Route
+              path = "/"
+              exact
+              render = {routerProps => <Home {...routerProps}/>}
+            />
+            <Route
+              path = "/:id"
+              exact
+              render = {routerProps => <DetailPage {...routerProps}/>}
+            />
+          </Switch>
+        </Router>
+      </main>
+    </>
+  );
+};
+
+export default App;

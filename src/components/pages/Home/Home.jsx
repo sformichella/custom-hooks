@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../presentation/Header/Header';
 import List from '../../presentation/List/List';
-import { useCharacters } from '../../../hooks/characters';
+import { useCharacters } from '../../../state/characters';
 
 export default function Home() {
 

@@ -11,6 +11,9 @@ exports[`Header component renders Header 1`] = `
     >
       Home
     </a>
+    <input
+      type="checkbox"
+    />
   </div>
 </DocumentFragment>
 `;
